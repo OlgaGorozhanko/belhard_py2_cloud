@@ -11,7 +11,7 @@ def is_client(login: str, password: str) -> bool:
     :param password:
     :return:
     """
-    print(f"is_client({login}, {password}) -- {True if clients[login]["password"] == password else False}")
+    print(f"is_client({login}, {password}) -- {True if clients[login]['password'] == password else False}")
     return True if clients[login]["password"] == password else False
 
 
