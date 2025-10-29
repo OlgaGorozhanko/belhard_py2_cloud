@@ -21,7 +21,7 @@ def __check_fio(fio: str) -> bool:
     :param fio:
     :return:
     """
-    print(f"__check_fio({fio}) -- {bool(re.fullmatch(r'[А-я\s]+', fio))}")
+    print(f"__check_fio({fio}) -- " + bool(re.fullmatch(r'[А-я\s]+', fio)))
     return True if bool(re.fullmatch(r'[А-я\s]+', fio)) else "error_fio"
 
 
